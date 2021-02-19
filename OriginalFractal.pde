@@ -1,11 +1,10 @@
 int num = 3;
 int holder = 20;
 float deg = 0;
-float place = 0;
+float p = 0;
 public void setup(){
   size(800, 600);
-  frameRate(30);
-  shapeMode(CENTER);
+  rectMode(CENTER);
 }
 
 public void draw(){
@@ -13,7 +12,7 @@ public void draw(){
   translate(400, 300);
   rotate(deg);
   fractal(0, 0, holder, num);
-  deg += place;
+  deg += p;
 }
 
 public void mousePressed(){
@@ -35,13 +34,13 @@ public void keyPressed(){
     holder -= 20;
   }
   else if (key == 'r'){
-    place += 0.01;
+    p += 0.01;
   }
   else if (key == 'd'){
-    place -= 0.01;
+    p -= 0.01;
   }
   else{
-    place = 0;
+    p = 0;
   }
   
 }
