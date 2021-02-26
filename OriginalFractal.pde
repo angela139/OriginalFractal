@@ -1,7 +1,7 @@
-int num = 3;
-int holder = 20;
-float deg = 0;
-float p = 0;
+public int num = 3;
+public int holder = 20;
+public float deg = 0;
+public float p = 0;
 public void setup(){
   size(800, 600);
   rectMode(CENTER);
